@@ -1,0 +1,8 @@
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+c=int(input("Enter third number:"))
+
+if a**2+b**2==c**2:
+    print("Its a right angled triangle")
+else:
+    print("Its a not right angled triangle")
