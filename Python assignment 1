@@ -1,0 +1,97 @@
+Q1]
+my_dict={'RAHUL':28,'AJAY':30,'VARUN':33,'BHOLA':18,'ANUJ':35}
+print('Original is this',my_dict)
+del my_dict['AJAY']
+print('After deleting ajay',my_dict)
+print(my_dict.pop('VARUN'))
+print('After deleting varun by pop',my_dict)
+print('-------------------------')
+print(my_dict.values())
+
+Q2]
+N = ['RAHUL', 'AJAY', 'VARUN', 'BHOLA', 'ROHIT']
+A = [22, 32, 40, 18, 25]
+my_dict = dict(zip(N, A))
+print(my_dict)
+
+Q3] N = ['RAHUL', 'AJAY', 'VARUN', 'BHOLA', 'ROHIT']
+A = [22, 32, 40, 18, 25]
+my_dict = dict(zip(N, A))
+print(sorted(my_dict))
+
+Q4] 
+my_dict = {'RAHUL': 22, 'AJAY': 32, 'VARUN': 40, 'BHOLA': 18}
+L1 = list(my_dict.keys())
+L2 = list(my_dict.values())
+print("List of keys:", L1)
+print("List of values:", L2)
+ 
+Q5]
+my_dict = {'Maths': 80,'Physics': 75,'Chemistry': 85,'English': 90}
+L = list(my_dict.values())
+total = sum(L)
+average = total / len(L)
+print("Average =", average)
+
+Q6]
+my_dict = {
+    'name': ['RAHUL', 'AJAY', 'VARUN'],
+    'age': [22, 32, 40]}
+#uniform
+print(my_dict['name'][2])
+my_dict = {
+    'roll no': [101, 102, 103],
+    'name': ['RAHUL', 'AJAY', 'VARUN']
+}
+#6c
+print(my_dict['roll no'][1])
+my_dict = {
+    'name': ['RAHUL', 'AJAY', 'VARUN'],
+    'marks': [85, 92, 78]}
+print(max(my_dict['marks']))
+
+Q7]
+s = "programming"
+print(s.count("m"))
+
+ Q8]
+
+a = int(input("Enter numerator: "))
+b = int(input("Enter denominator: "))
+
+print(divmod(a, b))
+
+Q9]
+d = int(input("Enter day: "))
+m = int(input("Enter month: "))
+y = int(input("Enter year: "))
+
+t = (y, m, d)
+
+print(t)
+
+
+students_list = ["Namyami","Kriya","Yug"]
+print("Original list -", students_list )
+students_list.append("Heet")
+students_list[1] = "Akshara"
+students_list.remove("Yug")           
+print("New List -",students_list )
+students_tuple = ("Namyami", "Kriya","Yug")
+print("Original Tuple-",students_tuple )
+students_tuple = students_tuple + ("Heet",)
+change_tuple = list(students_tuple)
+change_tuple[1] = "Akshara"
+students_tuple = tuple(change_tuple)
+temp_tuple = list(students_tuple)
+temp_tuple.remove("Yug")
+students_tuple = tuple(temp_tuple)
+print("New Tuple-",students_tuple)
+students_dict = {1:"Namyami",2:"Kriya",3:"Yug"}
+print("Original Dictionary-",students_dict)
+students_dict[4] = "Heet"
+students_dict[2] = "Akshara "
+del students_dict[3]
+print("New Dictionary-",students_dict)
+
+
